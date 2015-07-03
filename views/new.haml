@@ -1,29 +1,21 @@
-%form#video-form.pure-form.pure-form-aligned{ :action => "/video/create", :method => "post", :enctype => "multipart/form-data" }
+%form#video-form.pure-form.pure-form-aligned{ :action => "/registration/create", :method => "post", :enctype => "multipart/form-data" }
   %fieldset
     %legend= @title
     .pure-control-group
-      %label Title:
-      %input#title{ :type => "text", :name => "video[title]" }
+      %label Name:
+      %input#name{ :type => "text", :name => "registration[name]" }
 
     .pure-control-group
-      %label Description:
-      %textarea#description{ :name => "video[description]" }
+      %label Email:
+      %input#email{ :name => "registration[email]" }
 
     .pure-control-group
-      %label Genre:
-      %input#genre{ :type => "text", :name => "video[genre]" }
+      %label School:
+      %input#school{ :type => "text", :name => "registration[school]" }
 
     .pure-control-group
-      %label Length:
-      %input#length{ :type => "text", :name => "video[length]" }
-
-    .pure-control-group
-      %label Image:
-      %input#image-file{ :type => "file", :name => "image-file" }
-
-    .pure-control-group
-      %label Video:
-      %input#video-file{ :type => "file", :name => "video-file" }
+      %label Github:
+      %input#github{ :type => "text", :name => "registration[github]" }
 
     .pure-controls
       %button.pure-button.pure-button-primary{ :type => "submit" } Submit

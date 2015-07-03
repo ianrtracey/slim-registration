@@ -2,15 +2,15 @@
 %table.pure-table
   %thead
     %tr
-      %td Title
-      %td Length
-      %td Description
-      %td Genre
+      %td Name
+      %td Email
+      %td School
+      %td Github
   %tbody
-    - @videos.each do |video|
+    - @registrations.each do |reg|
       %tr
         %td
-          %a{ :href => "/video/show/#{video.id}" }= video.title
-        %td= video.length
-        %td= video.description
-        %td= video.genre
+          %a{ :href => "/registration/show/#{reg.id}" }= reg.name
+        %td= reg.email
+        %td= reg.school
+        %td= reg.github

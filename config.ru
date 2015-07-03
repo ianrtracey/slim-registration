@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
 require 'haml'
-require './video_store'
+require './cholla'
 
 set :environment, :development
 set :run, false
