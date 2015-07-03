@@ -1,1 +1,3 @@
-Code from blog post: http://matt.weppler.me/2013/07/19/lets-build-a-sinatra-app.html
+A lightweight hackathon registration app
+
+This app is the front-facing interface for Cactus
